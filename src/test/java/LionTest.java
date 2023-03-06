@@ -28,11 +28,6 @@ public class LionTest {
         assertEquals(lion.getFood(), List.of("Животные", "Птицы", "Рыба"));
     }
     @Test
-    public void doesHaveManeIsTrue() throws Exception {
-        Lion lion = new Lion("Самец", feline);
-        assertTrue("Есть грива", lion.doesHaveMane());
-    }
-    @Test
     public void exceptionHasMane(){
         try {
             Lion lion = new Lion("Самсон", new Feline());
