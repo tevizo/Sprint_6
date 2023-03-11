@@ -18,8 +18,8 @@ public class LionTest {
     @Test
     public void getKittensValue() throws Exception{
         Lion lion = new Lion("Самка", feline);
-        Mockito.when(lion.getKittens()).thenReturn(1);
-        assertEquals(1, lion.getKittens());
+        Mockito.when(feline.getKittens()).thenReturn(1);
+        assertEquals(lion.getKittens(), 1);
     }
     @Test
     public void getFoodReturnsCorrectList() throws Exception{
@@ -33,7 +33,7 @@ public class LionTest {
             Lion lion = new Lion("Самсон", new Feline());
             lion.doesHaveMane();
         } catch (Exception e) {
-          e.printStackTrace();
+            assertEquals("Используйте допустимые значения пола животного - самец или самка", e.getMessage());
         }
     }
 }
