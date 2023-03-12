@@ -1,13 +1,14 @@
 import com.example.Feline;
 import com.example.Lion;
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnitRunner;
 import java.util.List;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+
+import static org.junit.Assert.*;
 
 @RunWith(MockitoJUnitRunner.class)
 public class LionTest {
@@ -32,6 +33,7 @@ public class LionTest {
         try {
             Lion lion = new Lion("Самсон", new Feline());
             lion.doesHaveMane();
+            fail("Expected Exception");
         } catch (Exception e) {
             assertEquals("Используйте допустимые значения пола животного - самец или самка", e.getMessage());
         }

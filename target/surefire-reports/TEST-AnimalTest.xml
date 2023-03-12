@@ -64,8 +64,8 @@
   </properties>
   <testcase classname="AnimalTest" name="testAnimalFamily[0]" time="0.001"/>
   <testcase classname="AnimalTest" name="testAnimalValidation[0]" time="0"/>
-  <testcase classname="AnimalTest" name="testIncorrectValueOfAnimal[0]" time="0.001"/>
-  <testcase classname="AnimalTest" name="testAnimalFamily[1]" time="0"/>
+  <testcase classname="AnimalTest" name="testIncorrectValueOfAnimal[0]" time="0"/>
+  <testcase classname="AnimalTest" name="testAnimalFamily[1]" time="0.001"/>
   <testcase classname="AnimalTest" name="testAnimalValidation[1]" time="0"/>
   <testcase classname="AnimalTest" name="testIncorrectValueOfAnimal[1]" time="0"/>
 </testsuite>
